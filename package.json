@@ -1,0 +1,15 @@
+{
+  "name": "hederaconnect",
+  "version": "1.0.0",
+  "description": "hedera starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Will Sokolowski <will@codefrequency.org> (https://github.com/Sokos6)",
+  "license": "MIT",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.0.13",
+    "dotenv": "^8.2.0"
+  }
+}
