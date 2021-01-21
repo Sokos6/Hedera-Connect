@@ -73,5 +73,16 @@ async function main() {
         .getCost(client);
 
     console.log('The cost of query is: ' + getBalanceCost);
+
+    //Check the new account's balance
+    const getNewBalance = await new AccountBalanceQuery()
+        .setAccountId(newAccountId)
+        .execute(client);
+
+    console.log(
+        'The account balance after the transfer is: ' +
+            getNewBalance.hbars.toTinybars() +
+            ' tinybar.'
+    );
 }
 main();
